@@ -1,0 +1,36 @@
+#wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    border: 2px solid red;
+    display: flex;
+    width: 40rem;
+    height: 23rem;
+    border-radius: 20px;
+    gap:15px;
+    overflow: hidden;
+    margin: auto;
+    
+}
+h2{
+    color:  rgba(0, 0, 0, 0.434);
+}
+
+img{
+    width: 20rem;
+}
+button{
+    color: aliceblue;
+    width: 18rem;
+    height: 3rem;
+    border-radius: 8px;
+    background-color: rgba(91, 158, 50, 0.986);
+}
+span{
+    color: rgba(0, 0, 0, 0.204);
+    margin:5px;
+    font-size: 16px;
+}
