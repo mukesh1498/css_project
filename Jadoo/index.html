@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<title>Jadoo</title>
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+
+    }
+
+    /* navbar */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 26px;
+        height: 200px;
+        padding-top: 59px;
+        font-size: 17px;
+        padding-right: 1px;
+    }
+
+    .nav-links {
+        position: relative;
+        padding-left: 390px;
+        display: flex;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    ul.nav-links li {
+        display: inline-block;
+        padding: 0px 53px;
+    }
+
+    .nav-links li a {
+        color: #666665;
+        text-decoration: none;
+    }
+
+    .Sign-and-EN {
+        margin-right: 92px;
+        padding-right: 50px display: flex;
+    }
+
+    #Sign-up {
+        text-align: center;
+        height: 42px;
+        width: 97px;
+        border-radius: 4px;
+        justify-content: center;
+
+    }
+
+    .Jadoo {
+        position: relative;
+        left: 140px;
+    }
+
+    /* first- page section*/
+
+    .first-page {
+        margin: 0 auto;
+        top: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 900px;
+        background-color: #FFFFFF;
+
+    }
+
+    .first-page-container {
+        height: 650px;
+
+    }
+
+    .first-page-content {
+        position: relative;
+        left: 100px;
+        height: 500px;
+        padding: 0px 46px;
+
+    }
+
+    .content-image-box {
+        display: flex;
+
+    }
+
+    .first-page-content {
+
+        margin: 24px;
+        height: 500px;
+        position: relative;
+
+        padding: 0px 46px;
+    }
+
+    .first-page-content h3 {
+        font-size: 19px;
+        height: 50px;
+        color: #DF6951;
+        font-weight: bold;
+    }
+
+    #Travel-heading {
+        font-size: 45px;
+        color: #181E4B;
+    }
+
+    .first-page-content p {
+        font-size: 21px;
+        margin-top: 30px;
+        color: #8689A0;
+    }
+
+    .first-page-image {
+        position: relative;
+        right: 43px;
+
+    }
+
+    /* second page*/
+    .second-container {
+        height: 736px;
+        background-color: #FFFFFF;
+
+        border-radius: 66px;
+    }
+
+    .second-upper-section {
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .second-upper-section-h3-h1 {
+        font-size: 38px;
+        padding-top: 108px;
+    }
+
+    .second-page-card {
+
+        display: flex;
+        padding: 95px 105px;
+        height: class="second-page-card-h2" 72px;
+    }
+
+    .second-page-card .card {
+        border: 1px solid white;
+        padding: 56px 43px;
+        margin: 25px;
+        border-radius: 35px;
+        box-shadow: 0px 0px 0px;
+
+    }
+
+    .second-page-card-h2 {
+        padding-bottom: 18px;
+    }
+
+    #card-id {
+        position: relative;
+        z-index: 1;
+        border: 0px white;
+        box-shadow: 0px 1px 0px;
+    }
+
+    #card-id::after {
+        position: absolute;
+        content: '';
+        background-image: url(./images/Rectangle\ 157.png);
+        height: 100px;
+        width: 100px;
+        left: -30px;
+        z-index: -1;
+
+
+
+
+
+    }
+
+    /* Third- container*/
+    .third-container {
+        height: 740px;
+        width: 100%;
+
+        border-radius: 5px;
+    }
+
+    .third-upper-section {
+        background-color: #FFFFFF;
+        text-align: center;
+        padding: 58px;
+        padding-top: 136px;
+    }
+
+    .third-upper-section-section-h5-h1 {
+        font-size: 39px;
+        height: 200px;
+    }
+
+    .third-section-card {
+        display: flex;
+        padding: 0px 88px;
+    }
+
+    .third-page-card2 {
+        margin: 0px -41px;
+        border-radius: 5px;
+    }
+
+    .card2-details-container {
+        background-color: white;
+        position: absolute;
+        height: 75px;
+        box-shadow: 1px 0px 3px;
+        margin: -166px 80px;
+        border: 1px solid white;
+        width: 309px;
+        border-bottom-left-radius: 27px;
+        border-bottom-right-radius: 27px;
+
+    }
+
+    .card2-details {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* fourth-container*/
+    .fourth-container {
+        height: 700px;
+
+
+
+
+    }
+
+    .fourth-container-box {
+        display: flex;
+        margin: 173px 218px;
+    }
+
+    .fourth-container-features-details {
+        display: flex;
+        padding: 21px 1px;
+    }
+
+    .fourth-container-title {
+        font-size: 40px;
+    }
+
+    .details-text {
+        font-size: 20px;
+    }
+
+    .fourth-container-features {
+        padding: 0px 2px;
+    }
+
+    .fourth-container-image {
+
+        margin: 60px 75px;
+        background-color: #FEFEFE;
+        width: 393px;
+        box-shadow: 0px 0px 102px #D9EDF9;
+        height: 409px;
+        padding: 21px 27px;
+
+        border-radius: 22px;
+
+    }
+
+    .image-features {
+        padding: 14px 5px;
+    }
+
+    .image-features p {
+        padding: 6px 1px;
+    }
+
+    .image.icon {
+        padding: 10px 8px;
+        margin: 0px 8px;
+    }
+
+    .image-icon-footer {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        padding: 32px 1px;
+    }
+
+    .image-container-Trip {
+        position: absolute;
+        margin: -113px 164px;
+        padding: 7px;
+        border-radius: 24px;
+        box-shadow: 0px 0px 30px #c7b7b7;
+        display: flex;
+        width: 271px;
+        background-color: #f9f6f6;
+    }
+
+    #myProgress {
+        width: 100%;
+        background-color: #ddd;
+    }
+
+    #myBar {
+        width: 10%;
+        height: 10px;
+
+        text-align: center;
+        line-height: 30px;
+        color: white;
+    }
+
+    /* fufth section*/
+
+    .fifth-container {
+        height: 600px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+
+    .fifth-container-tank {
+        background-color: #FFFFFF;
+
+        display: flex;
+        height: 500px;
+        padding: 10px 218px;
+
+    }
+
+    .fifth-container-content h1 {
+        font-size: 53px;
+    }
+
+    .fifth-container-content p {
+        padding: 28px 6px;
+    }
+
+    .fifth-container-message {
+        background-color: #FFFFFF;
+        width: 630px;
+        position: relative;
+        padding: 45px 129px;
+        margin: 29px 8px;
+    }
+
+    .smile-men {
+        position: absolute;
+        margin: -31px -48px;
+    }
+
+    .smile-men-message {
+        border: 0px solid;
+        box-shadow: 0px 2px 7px;
+        border-radius: 15px;
+        padding: 13px 11px;
+        font-size: 16px;
+    }
+
+    #smile-men-name {
+
+        margin: 25px 1px;
+    }
+
+    .Chris-Thomas {
+        position: relative;
+        background-color: #F7F7F7;
+        border: 0px solid black;
+        padding: 8px 19px;
+        border-radius: 13px;
+        margin: -6px 26px;
+
+
+    }
+
+    .supponser-container {
+        background-color: #FFFFFF;
+        height: 300px;
+    }
+
+    .slick-initialized .slick-slide {
+        margin: 0px 50px;
+        display: block;
+    }
+
+
+
+    .last-container {
+        height: 500px;
+
+        text-align: center;
+        justify-content: center;
+    }
+
+    .last-container-box {
+        font-size: 30px;
+        color: #181E4B;
+    }
+
+    .last-container-tank {
+        color: #797C98;
+        background-color: #F9F7FE;
+
+        border-radius: 145px 15px 15px 15px;
+        margin: 42px 184px;
+        padding: 82px 5px;
+        height: 413px;
+        width: 1158px;
+    }
+
+    .your-emails {
+        display: flex;
+        width: 631px;
+        padding: 49px 0px;
+        margin: 0px 253px;
+    }
+
+    #btn {
+        width: 166px;
+
+        color: whitesmoke;
+        border: 1px solid;
+        margin: 36px 31px;
+        position: relative;
+        height: 57px;
+        border-radius: 15px;
+        background-color: #FF8A6B;
+        font-weight: bold;
+    }
+
+    .row {
+        display: flex;
+        padding: 12px 136px;
+        justify-content: space-around;
+    }
+
+    .column {}
+
+    .column h3 {
+        padding: 9px 3px;
+    }
+
+    .social-media li {
+        list-style: none;
+        padding: 0px 11px;
+    }
+
+    .column ul li {
+        list-style: none;
+    }
+
+    .column ul li a {
+        text-decoration: none;
+        color: #6F728F;
+    }
+
+    .footer-btn {
+        display: flex;
+    }
+
+    #lang {
+        border: 0px beige none;
+        background-color: #6f728f55;
+        border-radius: 5px;
+
+        /* padding: */
+        /* box-sizing: border-box */
+        ;
+    }
+</style>
+
+
+</head>
+
+<body>
+    <div class="first-page">
+        <div class="first-page-container">
+            <div class="navbar">
+                <nav>
+                    <h2 class="Jadoo">Jadoo</h2>
+                    <ul class="nav-links">
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Flights</a></li>
+                        <li><a href="#">Flights</a></li>
+                        <li><a href="#">Bookings</a></li>
+                        <li><a href="#">Login</a></li>
+
+                        <div class="Sign-and-EN"> <button id="Sign-up"> Sign up</button>
+                            <div id="EN" style="margin-left:30px;">
+                                <select name="lang" id="lang">
+
+                                    <option value="English"> English</option>
+                                    <option value="Hindi"> Hindi</option>
+                                </select>
+                            </div>
+                        </div>
+                    </ul>
+
+                </nav>
+                <div class="content-image-box">
+                    <div class="first-page-content">
+                        <h3>BEST DESTINATIONS AROUND THE WORLD</h3>
+                        <div id="Travel-heading">
+                            <h1>Travel, enjoy and Live a new and full life</h1>
+
+                        </div>
+                        <p>Built Wicket longer admire do barton vanity itself do in it.<br>
+                            preferred to sportsmen it engrosser listening. park gate <br>sell they wedt hard for the.
+                        </p>
+                        <div class="first-page-image">
+                            <img src="./images/CTA.png" alt="">
+                            <img src="./images/Play Demo.png" style="margin-top:120px;" alt="">
+                        </div>
+                    </div>
+                    <div class="first-page-image">
+                        <img src="./images/Image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second-page-->
+    <section>
+        <div class="second-container">
+            <div class="second-upper-section">
+                <div class="second-upper-section-h3-h1">
+                    <h3 style="font-size:27px; color:#8689A0;">CATEGORY</h3>
+                    <h1 style="color:#14183E;">We Offer Best Services</h1>
+                </div>
+                <div class="second-page-card">
+                    <div class="card">
+                        <div class="second-page-card-icon"><img src="./images/Group 48.png " alt=""></div>
+                        <h2 class="second-page-card-h2">Calculated Weather </h2>
+                        <p>Engrossed listening.park gate sell they west hard for the.</p>
+
+                    </div>
+
+                    <div class="card" id="card-id">
+                        <div class="second-page-card-icon"><img src="./images/Group 51.png" alt=""></div>
+                        <h2 class="second-page-card-h2">Best Flights </h2>
+                        <p>Barton vanity itself do in it.preferd to men it engrossed listening.</p>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="second-page-card-icon"><img src="./images/Group 49.png" alt=""></div>
+                        <h2 class="second-page-card-h2"> Local Events</h2>
+                        <p>We deliver outsourced aviation services for military customers</p>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="second-page-card-icon"><img src="./images/Group 50.png" alt=""></div>
+                        <h2 class="second-page-card-h2">Customizations</h2>
+                        <p>Built Wicket longer admire do barton vanity itselfdo in it.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- third section-->
+    <section>
+        <div class="third-container">
+            <div class="third-upper-section">
+                <div class="third-upper-section-section-h5-h1">
+                    <p>Top Selling</p>
+                    <h1>Top Destinations</h1>
+                </div>
+                <div class="third-section-card">
+                    <div class="third-page-card2">
+                        <img src="./images/Rectangle 14.jpg" width="470px" height="450px" alt="">
+                        <div class="card2-details-container">
+                            <div class="card2-details">
+                                <p>London, UK</p>
+                                <p style="margin-left: 130px;">$4.2k</p>
+                            </div>
+                            <p style="margin-top:10px; padding-right:140px; ">12 Days Trip</p>
+                        </div>
+                    </div>
+                    <div class="third-page-card2">
+                        <img src="./images/Rectangle 14.png" width="470px" height="450px" alt="">
+                        <div class="card2-details-container">
+                            <div class="card2-details">
+                                <p>Rome Italty</p>
+                                <p style="margin-left: 130px;">$5,42k</p>
+                            </div>
+                            <p style="margin-top:10px; padding-right:140px; ">10 Days Trip</p>
+                        </div>
+                    </div>
+                    <div class="third-page-card2">
+                        <img src="./images/Rectangle 14.jpg" width="470px" height="450px" alt="">
+                        <div class="card2-details-container">
+                            <div class="card2-details">
+                                <p>Full Europe</p>
+                                <p style="margin-left: 130px;">$15k</p>
+                            </div>
+                            <p style="margin-top:10px; padding-right:140px; ">28 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--   fourth section-->
+    <section>
+        <div class="fourth-container">
+            <div class="fourth-container-box">
+                <div class="fouth-container-content">
+                    <div class="fourth-container-title">
+                        <p style="font-weight:bold; color:  #5E6282; ">Easy and Fast</p>
+                        <h1>Book Your Next Trip <br> In 3 Easy Steps</h1>
+                    </div>
+                    <div class="fourth-container-features">
+                        <div class="fourth-container-features-details">
+                            <img src="./images/cart.png" width="50px" height="50px" alt="">
+                            <div class="details-text">
+                                <h4>Choose Destination</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipisicing elit. Liber torter tempus </p>
+                            </div>
+
+                        </div>
+                        <div class="fourth-container-features-details">
+                            <img src="./images/home.png" width="50px" height="50px" alt="">
+
+                            <div class="details-text">
+                                <h4>Choose Destination</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipisicing elit. Liber torter tempus </p>
+                            </div>
+                        </div>
+                        <div class="fourth-container-features-details">
+                            <img src="./images/laptop.png" width="50px" height="50px" alt="">
+                            <div class="details-text">
+                                <h4>Choose Destination</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipisicing elit. Liber torter tempus </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourth-container-image">
+                    <img src="./images/Rectangle 17.jpg" alt="">
+                    <div class="image-features">
+                        <h3>Trip To Greece</h3>
+                        <p style="padding: 11px 8px;">14-29 June| by Robbin </p>
+                        <div class="image-icon">
+                            <img src="./images/instagram.jpg" width="30px" height="30px" alt="">
+                            <img src="./images/twitter.jpg" width="30px" height="30px" alt="">
+                            <img src="./images/whatsapp.jpg" width="30px" height="30px" alt="">
+                        </div>
+                        <div class="image-icon-footer">
+                            <p>24 people going</p>
+                            <img src="./images/bottom-icon.jpg" width="30px" height="30px" alt="">
+
+
+                            <div class="image-container-Trip">
+                                <img src="./images/taj-mahal.jpg" width="50px" height="50px" border-radius="50%" alt="">
+                                <div class="image-container-Trip-features">
+                                    <p>Ongoing</p>
+                                    <h3>Trip to rome</h3>
+                                    <p>10% completed</p>
+                                    <div id="myProgress">
+                                        <div id="myBar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fifth section -->
+    <section>
+        <div class="fifth-container">
+            <div class="fifth-container-tank">
+                <div class="fifth-container-content">
+                    <p>TESTIMONIALS</p>
+                    <h1>What People Say<br> About Us. </h1>
+                    <h1 style="padding:12px 2px;">...</h1>
+                </div>
+                <div class="fifth-container-message">
+
+                    <div class="smile-men"><img src="./images/Image (1).png" height="50px" width="50px" alt="">
+                    </div>
+
+                    <div class="smile-men-message">
+                        <p> "on the Windows talking painted pasture yet its<br> express parties use. sure last upon he
+                            same as<br> knew next. Of believed or diverted no."</p>
+                        <div id="smile-men-name">
+                            <h3>Mike taylor</h3>
+                            <p>Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="Chris-Thomas">
+                        <h3>Chris Thomas</h3>
+                        <p>CEO of Red Button</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="supponser-container">
+            <div class="center">
+                10 <img
+                    src="images/supponser/74567515-logo-stylized-spherical-surface-with-abstract-shapes-this-logo-is-suitable-for-global-company.webp"
+                    width="100px" height="100px" alt="">
+                <div>
+                    <img src="./images/supponser/Aarti-Industries-Ltd-1024x553.webp" width="100px" height="100px"
+                        alt="">
+                </div>
+                <div>
+                    <img src="./images/supponser/logo-g38b6f3c8b_1280.png" width="100px" height="100px" alt="">
+                </div>
+                <div>
+                    <img src="./images/supponser/logo-quiz-fasttrack_605201d6ae516.jpg" width="100px" height="100px"
+                        alt="">
+                </div>
+                <div>
+                    <img src="./images/supponser/mahindra.jpg" width="100px" height="100px" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="last-container">
+            <div class="last-container-tank">
+                <div class="last-container-box">
+                    <h2>Subscribe to get information, latest news and other <br>
+                        interesting offers about Cobham</h2>
+                </div>
+                <div class="your-emails">
+                    <input type="email" value="Your email"
+                        style="height: 50px; padding:0px 12px; width:441px; margin:41px -21px 0px 0px;font-weight:700; color:#c7b7b7; font-size:15px;">
+                    <button id="btn"> Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="column" style="margin:0px -41px;">
+                    <h1>Jadoo</h1>
+                    <p style="margin:22px 0px;">Book your trip in minute, get<br>
+                        Control for much longer.</p>
+                </div>
+
+                <div class="column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#"> About</a></li>
+                        <li><a href="#"> Career</a></li>
+
+                        <li><a href="#"> Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">Help/FAQ</a></li>
+                        <li><a href="#"> Press</a></li>
+                        <li><a href="#"> Affiliates</a></li>
+
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>more</h3>
+                    <ul>
+                        <li><a href="#">Airlinefees</a></li>
+                        <li><a href="#"> Airline</a></li>
+                        <li><a href="#"> Low fare tips</a></li>
+
+                    </ul>
+                </div>
+                <div class="column">
+
+                    <ul class="social-media" style="display:flex;">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+
+                    </ul>
+                    <p style="padding:16px 5px;">Discover our app</p>
+                    <div class="footer-btn">
+                        <button id="play-store"
+                            style="height:33px; width:65px;background-color: black; color:whitesmoke; border-radius:12px; padding: 0px 2px;">
+                            play</button>
+                        <button id="Apple store"
+                            style="height:33px; width:65px;background-color: black; color:whitesmoke; border-radius:12px; padding: 0px 2px;">
+                            Apple</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+        <script>
+            $('.third-section-card').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true
+            });
+
+        </script>
+        <script type="text/javascript">
+
+            $('.center').slick({
+
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true
+            });
+
+
+
+        </script>
+</body>
+
+</html>
